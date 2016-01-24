@@ -31,6 +31,7 @@
             <td stk-sign-color="{{watchlist.dayChange}}">{{watchlist.dayChange | currency}}</td>
         </tr>
     </tfoot>
+
     <tbody>
         <!-- Use stk-stock-row to create row for each stock -->
         <tr stk-stock-row
@@ -39,22 +40,12 @@
             is-last="$last">
             <td>{{stock.company.symbol}}</td>
             <td contenteditable type="number" ng-model="stock.shares"></td>
-            
-            
-            <!--<td>{{stock.lastPrice | currency}}</td>-->
             <td stk-sign-color="{{stock.lastPrice}}">{{stock.lastPrice | currency}}</td>            
-            
-            
-            
-            
             <td>
                 <span ng-hide="showPercent">{{stock.change | currency}}</span>
                 <span ng-show="showPercent">{{stock.percentChange}}</span>
             </td>
             <td stk-sign-color="{{stock.marketValue}}">{{stock.marketValue | currency}}</td>
-            <!--<td>{{stock.marketValue | currency}}</td>-->
-            
-            
             <td stk-sign-color="{{stock.dayChange}}">{{stock.dayChange | currency}}
                 <button type="button" class="close"ng-click="removeStock(stock)">&times;</button>
             </td>

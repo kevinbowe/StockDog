@@ -17,12 +17,8 @@ angular.module('stockDogApp')
                   var stock = stocks[idx];
                   /*stock.lastPrice = parseFloat(quote.LastTradePriceOnly);*/
                   stock.lastPrice = parseFloat(quote.LastTradePriceOnly) + _.random(-.5, .5);
-                  
                   stock.change = quote.Change;
                   stock.percentChange = quote.ChangeinPercent;
-                  /*stock.change = quote.Change;
-                  stock.percentChange = quote.ChangeinPercent;*/
-                  
                   stock.marketValue = stock.shares * stock.lastPrice;
                   stock.dayChange = stock.shares * parseFloat(stock.change);
                   stock.save();
