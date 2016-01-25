@@ -1,6 +1,6 @@
 'use strict';
 
-angular.model('stockDogApp')
+angular.module('stockDogApp')
 .directive('stkSignFade',function ($animate) {
     return{
         restrict: 'A',
