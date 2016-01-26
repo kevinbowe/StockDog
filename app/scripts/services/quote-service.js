@@ -27,9 +27,11 @@ angular.module('stockDogApp')
     this.register = function (stock) {
         stocks.push(stock);
     };
+    
     this.deregister = function (stock) {
         _.remove(stocks, stock);
     };
+    
     this.clear = function () {
         stocks =[];
     };

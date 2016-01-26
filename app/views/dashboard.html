@@ -12,7 +12,6 @@
         Portfolio Overview
       </div>
 
-
       <div class="panel-body">
         <!-- Display some helpful text to guide new users -->
         <div ng-hide="watchlists.length && watchlists[0].stocks.length" class="jumbotron">
@@ -45,22 +44,25 @@
                 <h5>Total Day Change</h5>
               </div>
             </div>
-          </div>
+          </div> <!-- ROW -->
             
-            <!-- Use google-chart directive and reference chart objects -->
-            <div class="row">
-              <!-- Left Column -->
-              <div class="col-md-6">
-                <div google-chart chart="donutChart" style="{{cssStyle}}"></div>
-              </div>
+          <!-- Use google-chart directive and reference chart objects -->
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+              <div google-chart chart="donutChart" style="{{cssStyle}}"></div>
+            </div>
 
-              <!-- Right Column -->
-              <div class="col-md-6">
-                <div google-chart chart="columnChart" style="{{cssStyle}}"></div>
-              </div>
-            </div> <!-- ROW -->
-          </div> <!-- NG-SHOW-->
-      </div> <!-- PANEL-BODY --> 
+            <!-- Right Column -->
+            <div class="col-md-6">
+              <div google-chart chart="columnChart" style="{{cssStyle}}"></div>
+            </div>
+          </div> <!-- ROW -->
+          
+        </div> <!-- NG-SHOW-->
+        
+      </div> <!-- PANEL-BODY -->
+       
     </div> <!-- PANEL-INFO -->
-  </div> <!-- Col-MD-9 -->
+  </div> <!-- COL-MD-9 -->
 </div> <!-- ROW -->
