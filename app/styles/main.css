@@ -1,3 +1,9 @@
+/* Daskboard View Styles */
+.well {
+  background-color: white;
+  text-align: center;
+}
+
 /* Stock Table Styles */
 .table {
   text-align: center;
